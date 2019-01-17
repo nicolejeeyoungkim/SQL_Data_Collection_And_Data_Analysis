@@ -16,7 +16,7 @@ b=0
 url = 'https://api.nytimes.com/svc/search/v2/articlesearch.json'
 
 
-conn = psycopg2.connect("host=192.168.1.145 dbname=data user=data password=data321DATA")
+conn = psycopg2.connect("host=XXX dbname=data user=XXX password=XXX")
 cur = conn.cursor()
 cur.execute("SELECT COUNT(NewsID) FROM NewsSearchStockMarket0731;")
 z = cur.fetchone()
